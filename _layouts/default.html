@@ -1,1 +1,17 @@
-{{ content }}
+<!DOCTYPE html>
+<html
+  lang="{{ page.lang | default: site.lang | default: ' en' }}"
+  x-data="{ darkMode: $persist(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) }"
+  x-bind:data-bs-theme="darkMode ? 'dark' : 'light'"
+>
+  {%- include head.html -%}
+
+  <body>
+    <div class="container">
+      {%- include navbar.html -%}
+      <main>{{ content }}</main>
+    </div>
+  </body>
+
+  {%- include scripts.html -%}
+</html>
