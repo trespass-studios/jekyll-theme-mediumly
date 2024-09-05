@@ -18,12 +18,18 @@
 	},
 	"homepage": "https://github.com/trespass-studios/jekyll-theme-mediumly#readme",
 	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.15",
 		"autoprefixer": "^10.4.20",
+		"cssnano": "^7.0.6",
 		"parcel": "^2.12.0",
 		"postcss": "^8.4.45",
+		"postcss-import": "^16.1.0",
+		"postcss-nested": "^6.2.0",
 		"tailwindcss": "^3.4.10"
 	},
 	"scripts": {
-		"test": "test"
+		"build": "bundle exec jekyll build",
+		"build-prod": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
+		"dev": "bundle exec jekyll serve --watch"
 	}
 }
