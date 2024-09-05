@@ -1,0 +1,25 @@
+title: Mediumly
+email: rockmanjoe64@proton.me
+description: >- # this means to ignore newlines until "baseurl:"
+  A minimalistic Jekyll theme inspired by Medium's design.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: rockmanjoe64
+github_username: rockmanjoe64
+
+plugins:
+  - jekyll-postcss
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - src/
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - jekyll-theme-mediumly.gemspec
+  - setup.sh
+  - LICENSE
+  - LICENSE.txt
+  - README.md
